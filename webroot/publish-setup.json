@@ -1,0 +1,15 @@
+{
+  "website": {
+    "style": "fhir.layout",
+    "url": "http://ig.fhir-il-community.org",
+    "server": "apache",
+    "org": "fhir-il-community"
+  },
+  "layout-rules": [
+    {
+      "npm": "ig.fhir-il-community.org.lrc",
+      "canonical": "http://ig.fhir-il-community.org/LRC",
+      "destination": "/LRC"
+    }
+  ]
+}

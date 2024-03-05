@@ -1,0 +1,15 @@
+﻿{
+  "list" : [
+    {
+      "version" : "current",
+      "path" : "http://ig.fhir-il-community.org/LRC",
+      "status" : "ci-build",
+      "sequence" : "ci-build"
+    }
+  ],
+  "package-id" : "health.gov.il.fhir.core",
+  "canonical" : "http://ig.fhir-il-community.org/LRC",
+  "title" : "Laboratory Report Cycle IL",
+  "category" : "Laboratory Report",
+  "introduction" : "This is the implementation guide (IG) for the Lab Repoting cycle (LRC) project"
+}

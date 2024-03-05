@@ -1,0 +1,10 @@
+﻿{
+  "list" : [
+    
+  ],
+  "package-id" : "ig.fhir-il-community.org.lab-referral-cycle",
+  "canonical" : "http://ig.fhir-il-community.org/LRC",
+  "title" : "Laboratory Report Cycle IL",
+  "category" : "Laboratory Report",
+  "introduction" : "This is the implementation guide (IG) for the Lab Repoting cycle (LRC) project"
+}

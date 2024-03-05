@@ -1,0 +1,13 @@
+{
+  "packages" : [
+    {
+      "path" : "LRC/package-list.json",
+      "package-id" : "ig.fhir-il-community.org.lab-referral-cycle",
+      "title" : "Laboratory Report Cycle IL",
+      "canonical" : "http://ig.fhir-il-community.org/LRC",
+      "category" : "National Base",
+      "ci-build" : "https://build.fhir.org/ig/fhir-il-community/LRC",
+      "version-count" : 1
+    }
+  ]
+}
