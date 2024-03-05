@@ -24,8 +24,12 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
+dependencies:
+  il.core.fhir.r4: 
+    uri:  http://fhir.health.gov.il/ImplementationGuide/health.gov.il.fhir.core
+    version: 0.13.2
+
+
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -43,15 +47,54 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
-#
+pages:
+  index.md:
+    title: אודות הפרויקט
+    generation: markdown
+  data-flow.md:
+    title: DataFlow
+    generation: markdown
+  search-interactions.md:
+    generation: markdown
+  server-community.md:
+    generation: markdown
+  server-hospital.md:
+    title: Server - בית החולים
+    generation: markdown
+  client-hospital.md: 
+    title: Client - בית החולים
+    generation: markdown
+  profiles-and-extensions.md:
+    title: פרופילים והרחבות
+    generation: markdown
+  examples.md:
+    title: דוגמאות
+    generation: markdown
+  downloads.md:
+    title: הורדות
+    generation: markdown
+
+
+  
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  קישורים נוספים:
+    FHIR Spec: new-tab {{site.data.fhir.path}}index.html
+    Israel LCore : new-tab https://en.fhir-il-community.org/fhir-israel-core
+  הורדות : downloads.html
+  משאבי FHIR: 
+    פרופילים והרחבות : profiles-and-extensions.html
+    דוגמאות: examples.html
+  הנחיות: 
+    חיפושים ואינטראקציות: search-interactions.html
+    server - קהילה: server-community.html
+    server - בית החולים: server-hospital.html
+    client - בית החולים: client-hospital.html
+  Dataflow : data-flow.html
+  בית: index.html
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -74,9 +117,6 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
