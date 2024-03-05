@@ -1,0 +1,11 @@
+.DS_Store
+fsh-generated
+temp
+LRC/publisher.jar
+publisher.jar
+input-cache
+template
+*.db
+full-ig.zip
+# .index.json
+Webroot/ig-build-zips

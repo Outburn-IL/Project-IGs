@@ -1,0 +1,50 @@
+Instance: lrc-lab-report-results
+InstanceOf: lrc-lab-report
+Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">דוח מסכם של תוצאות המעבדה של מטופל</div>"
+* meta.profile = $lrc-lab-report
+* extension.url = "http://fhir.health.gov.il/StructureDefinition/ext-diagnostic-report-note"
+* extension.valueAnnotation.text = "טקסט שהוזן בכותרת המדבקה"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:1c645996-698c-4dd6-8a56-8eba4810e6f7"
+* basedOn = Reference(ServiceRequest/lrc-referral-group-example)
+* basedOn.identifier.system = "urn:ietf:rfc:3986"
+* basedOn.identifier.value = "urn:uuid:509dd6aa-27ce-48a3-ba4d-b675eab7213c"
+* status = #final
+* category[hl7-lab] = $hl7-diag-category-cs#LAB "Laboratory"
+* code = $loinc#11502-2 "Laboratory report"
+* subject = Reference(http://hapi-fhir.outburn.co.il/fhir/Patient/90)
+* subject.type = "Patient"
+* subject.identifier.system = "http://fhir.health.gov.il/identifier/il-national-id"
+* subject.identifier.value = "000000018"
+* issued = "2023-04-03T11:34:06.954+03:00"
+* performer.type = "Organization"
+* performer.identifier.system = "http://fhir.meuhedet.co.il/laboratories"
+* performer.identifier.value = "73D01"
+* performer.display = "קופת חולים מאוחדת"
+* result[0].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/profile-lab-result"
+* result[=].identifier.value = "1121991-20230403-100-733-1"
+* result[+].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/lab-result"
+* result[=].identifier.value = "1121991-20230403-100-733-2"
+* result[+].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/lab-result"
+* result[=].identifier.value = "1121991-20230403-100-733-3"
+* result[+].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/lab-result"
+* result[=].identifier.value = "CBC-1001"
+* result[+].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/lab-result"
+* result[=].identifier.value = "CBC-1002"
+* result[+].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/lab-result"
+* result[=].identifier.value = "CBC-1003"
+* result[+].type = "Observation"
+* result[=].identifier.system = "http://fhir.meuhedet.co.il/identifier/lab-result"
+* result[=].identifier.value = "CBC-1004"
+* presentedForm.contentType = #application/pdf
+* presentedForm.data = "JVBERi0xLjcKJcKAwoHCgsKDCjEgMCBvYmoKPDwvVHlwZS9QYWdlcy9Db3VudCAxL0tpZHNbMyAwIFJdPj4KZW5kb2JqCjQgMCBvYmoKPDwvTGVuZ3RoIDQzMC9GaWx0ZXIvRmxhdGVEZWNvZGU+PgpzdHJlYW0KeJztlMFOwzAMhu99Cl84LouTNEmlaQc2NIG0w+ABOCCxgbZDQQL69thOs2XVQCAEJ1Rt+Wo7TvzbKioN/IxQoI6qhrtdpVwt5rySCfvIvJKJlx2g1WLa9pT+t3CgTdXK9vx7WsN9teqNOefINrKgdpGTtxQxnj+8wGQyXs4u56CnUzifz8gxXtzoWz2S503D+pls7SCdb1SwEBwqz9mGpw3cGqLiWtgdJawDjDaksqKoIAs7u4Ro3d5LHNMGoU7iBJMOBDpt6EQN1ZjGgWq8DseKtH9+FQdLMlyBobBXokdqujcBFImDoGLQNVwv4IauVz4XyxmcAfXnuEl4ukmYm4QuOkCjPQ9Oz3wzYkuMumCT2DC7xJq5Fg4Ns08cmEPimjnlDJwfm8QmszUNdX34Eouonm3BdXFCKE6OB06362+KzLaoAE9XWVav/Z4x9tW7zDI2EZTVNXewmJh/TX+iaZ5/RXPez/9B5WLwP5T/GzlYGC7CWGqVRadiViN7pNTTrc6qGiebrTLlZp+12ZDPK5d8FGhi2mUkML18cgpX9BsnfVWi4ddlVb0DoIBVzAplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDE5L0ZpbHRlci9GbGF0ZURlY29kZT4+CnN0cmVhbQp4nDNUMABCXUMwlZzLBQAW6ALqCmVuZHN0cmVhbQplbmRvYmoKMyAwIG9iago8PC9SZXNvdXJjZXMgMiAwIFIvUGFyZW50IDEgMCBSL1RhYnMvUy9Db250ZW50c1s0IDAgUiA1IDAgUl0vTWVkaWFCb3hbMCAwIDU4LjUgNTguNV0vVHlwZS9QYWdlL0Fubm90c1tdPj4KZW5kb2JqCjYgMCBvYmoKPDwvQmFzZUZvbnQvSGVsdmV0aWNhL1N1YnR5cGUvVHlwZTEvVHlwZS9Gb250L0VuY29kaW5nL1dpbkFuc2lFbmNvZGluZz4+CmVuZG9iago3IDAgb2JqCjw8L0Jhc2VGb250L0hlbHZldGljYS1Cb2xkL1N1YnR5cGUvVHlwZTEvVHlwZS9Gb250L0VuY29kaW5nL1dpbkFuc2lFbmNvZGluZz4+CmVuZG9iago4IDAgb2JqCjw8L0Jhc2VGb250L0hlbHZldGljYS1PYmxpcXVlL1N1YnR5cGUvVHlwZTEvVHlwZS9Gb250L0VuY29kaW5nL1dpbkFuc2lFbmNvZGluZz4+CmVuZG9iago5IDAgb2JqCjw8L0Jhc2VGb250L0hlbHZldGljYS1Cb2xkT2JsaXF1ZS9TdWJ0eXBlL1R5cGUxL1R5cGUvRm9udC9FbmNvZGluZy9XaW5BbnNpRW5jb2Rpbmc+PgplbmRvYmoKMTAgMCBvYmoKPDwvVHlwZS9FeHRHU3RhdGUvQk0vTm9ybWFsL0NBIDEuMC9jYSAxLjA+PgplbmRvYmoKMTEgMCBvYmoKPDwvVHlwZS9FeHRHU3RhdGUvQk0vTm9ybWFsL0NBIDEuMC9jYSAxLjA+PgplbmRvYmoKMiAwIG9iago8PC9YT2JqZWN0PDw+Pi9Qcm9jU2V0Wy9QREYvVGV4dC9JbWFnZUIvSW1hZ2VDL0ltYWdlSV0vU2hhZGluZzw8Pj4vRm9udDw8L0YxIDYgMCBSL0YyIDcgMCBSL0YzIDggMCBSL0Y0IDkgMCBSPj4vRXh0R1N0YXRlPDwvR1MwXzAtMC0wLTB4MCAxMCAwIFIvR1MwXzAtMC0wLTB4MSAxMSAwIFI+Pj4+CmVuZG9iagoxMiAwIG9iago8PC9DcmVhdGlvbkRhdGUoRDoyMDIzMDcyNzExNTc0NykvVGl0bGUoVG9mZXNfMTdfMS5wZGYpL1Byb2R1Y2VyKEx1Y2lkIFNvZnR3YXJlIEluYy4pL1N1YmplY3QoTHVjaWRjaGFydCkvQ3JlYXRvcihMaXJvbiBTaGFoYXItQXRpYSkvS2V5d29yZHMoKS9BdXRob3IoKS9Nb2REYXRlKEQ6MjAyMzA3MjcxMTU3NDcpPj4KZW5kb2JqCjIyIDAgb2JqCjw8L04gOS9MZW5ndGggMjMxL0ZpbHRlci9GbGF0ZURlY29kZS9UeXBlL09ialN0bS9GaXJzdCA2MD4+CnN0cmVhbQp4nJVRTQvCMAy9+yty1FPbtToFEQT1MpQxdxs7jBHGYHNSO9F/b7p14NdBDyUhyXt5fRFT4CBmMFMgfBCCwpwyehI8j4ICSW2xAOkr8DjIBQUBihrLJVtXZjxhoR3jELEgoVlKUhYWILvSke3KotXI4vsZ2dHoNjfbCuvVakR4Qk4dkr+ANuX1O+Jz4/zfjf6A/G1jmGk8mVgjHvBmAryDeKpZTxyd6oVETYX77Gw9s40nTjsfNY3ped+WWQlN3tbEa0XKgbXzx4lOe+SmzAqd1e6ffe3Q1peE29O4OXcKcP6MHhzYhVAKZW5kc3RyZWFtCmVuZG9iagoyMyAwIG9iago8PC9UeXBlL091dGxpbmVzL0ZpcnN0IDI0IDAgUi9MYXN0IDI0IDAgUi9Db3VudCAyPj4KZW5kb2JqCjI0IDAgb2JqCjw8L1RpdGxlKFRvZmVzXzE3XzEpL0NvdW50IDEvTGFzdCAyNSAwIFIvRmlyc3QgMjUgMCBSL1BhcmVudCAyMyAwIFIvRGVzdFszIDAgUi9GaXRCXT4+CmVuZG9iagoyNSAwIG9iago8PC9EZXN0WzMgMCBSL0ZpdEJdL1BhcmVudCAyNCAwIFIvVGl0bGUoU2VxdWVuY2UgZGlhZ3JhbSk+PgplbmRvYmoKMjYgMCBvYmoKPDwvVHlwZS9NZXRhZGF0YS9MZW5ndGggMTEyNC9TdWJ0eXBlL1hNTD4+CnN0cmVhbQo8P3hwYWNrZXQgYmVnaW49IiIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJMdWNpZGNoYXJ0Ij4KICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIj4KICAgICAgPGRjOmZvcm1hdD5hcHBsaWNhdGlvbi9wZGY8L2RjOmZvcm1hdD4KICAgICAgPGRjOnRpdGxlPjxyZGY6QWx0PjxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+VG9mZXNfMTdfMTwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOnRpdGxlPgogICAgICA8ZGM6Y3JlYXRvcj48cmRmOkJhZz48cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPkxpcm9uIFNoYWhhci1BdGlhPC9yZGY6bGk+PC9yZGY6QmFnPjwvZGM6Y3JlYXRvcj4KICAgICAgPGRjOmRlc2NyaXB0aW9uPjxyZGY6QWx0PjxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+THVjaWRjaGFydDwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOmRlc2NyaXB0aW9uPgogICAgICA8eG1wOkNyZWF0ZURhdGU+MjAyMy0wNy0yN1QxMTo1Nzo0N1VUQzwveG1wOkNyZWF0ZURhdGU+CiAgICAgIDx4bXA6TW9kaWZ5RGF0ZT4yMDIzLTA3LTI3VDExOjU3OjQ3VVRDPC94bXA6TW9kaWZ5RGF0ZT4KICAgICAgPHhtcDpNZXRhZGF0YURhdGU+MjAyMy0wNy0yN1QxMTo1Nzo0N1VUQzwveG1wOk1ldGFkYXRhRGF0ZT4KICAgICAgPHhtcE1NOkRvY3VtZW50SUQ+dXVpZDo4M2UwODIxOC05NTIxLTQzOGMtYTgxOS1iNWI4MWNiOGMwNDE8L3htcE1NOkRvY3VtZW50SUQ+CiAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnV1aWQ6ODNlMDgyMTgtOTUyMS00MzhjLWE4MTktYjViODFjYjhjMDQxPC94bXBNTTpJbnN0YW5jZUlEPgogICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0idyI/PgplbmRzdHJlYW0KZW5kb2JqCjI3IDAgb2JqCjw8L01ldGFkYXRhIDI2IDAgUi9QYWdlcyAxIDAgUi9NYXJrSW5mbzw8L01hcmtlZCB0cnVlPj4vT3V0bGluZXMgMjMgMCBSL0xhbmcoZW4pL1N0cnVjdFRyZWVSb290IDEzIDAgUi9WaWV3ZXJQcmVmZXJlbmNlczw8L0Rpc3BsYXlEb2NUaXRsZSB0cnVlPj4vVHlwZS9DYXRhbG9nPj4KZW5kb2JqCjI4IDAgb2JqCjw8L0lEWzwzMjMzMzczNzM2NjEzODM1PjwzMjMzMzczNzM2NjEzODM1Pl0vUm9vdCAyNyAwIFIvTGVuZ3RoIDEwMy9TaXplIDI5L0luZm8gMjYgMCBSL1dbMSA0IDJdL0ZpbHRlci9GbGF0ZURlY29kZS9UeXBlL1hSZWY+PgpzdHJlYW0KeJwtzLENgDAMRFGHBJIGGhAVgzABa1AgMQI1E7ALtDAYXbD8ceEnn3QW0cnZ6W5FlPAaxWHIxDUaPsIMD4UBdiAsTy1pvZcAJfyhgwI8VBAh6Zdqs2fxhmykFS6jXoymE/kAdgMMcAplbmRzdHJlYW0KZW5kb2JqCnN0YXJ0eHJlZgozNjA0CiUlRU9G"
+* presentedForm.title = "תוצאות בדיקות מעבדה"
+* presentedForm.creation = "2023-04-03T11:38:31.215+03:00"

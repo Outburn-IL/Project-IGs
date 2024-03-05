@@ -1,0 +1,15 @@
+{
+  "package-id" : "ig.fhir-il-community.org.lrc",
+  "version" : "1.0.0",
+  "path" : "http://ig.fhir-il-community.org/LRC/1.0.0",
+  "mode" : "milestone",
+  "status" : "draft",
+  "sequence" : "draft-1",
+  "title" : "LRC IG",
+  "ci-build": "https://build.fhir.org/ig/il-community/lrc",
+  "first": "true",
+  "category": "Laboratory Report",
+  "introduction": "This is the implementation guide (IG) for the Lab Repoting cycle (LRC) project",
+  "desc": "This is the implementation guide (IG) for the Lab Repoting cycle (LRC) project"
+}
+
