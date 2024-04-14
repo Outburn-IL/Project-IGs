@@ -26,8 +26,11 @@ publisher:
 #
 dependencies:
   il.core.fhir.r4: 
-    uri:  http://fhir.health.gov.il/ImplementationGuide/health.gov.il.fhir.core
-    version: 0.13.2
+    uri: http://fhir.health.gov.il/ImplementationGuide/health.gov.il.fhir.core
+    version: latest
+  # fhir.outburn.co.il:
+  #   uri: http://fhir.outburn.co.il//ImplementationGuide/outburn
+  #   version: 0.5.0
 
 
 #   hl7.fhir.us.mcode:
@@ -47,53 +50,53 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-pages:
-  index.md:
-    title: אודות הפרויקט
-    generation: markdown
-  data-flow.md:
-    title: DataFlow
-    generation: markdown
-  search-interactions.md:
-    generation: markdown
-  server-community.md:
-    generation: markdown
-  server-hospital.md:
-    title: Server - בית החולים
-    generation: markdown
-  client-hospital.md: 
-    title: Client - בית החולים
-    generation: markdown
-  profiles-and-extensions.md:
-    title: פרופילים והרחבות
-    generation: markdown
-  examples.md:
-    title: דוגמאות
-    generation: markdown
-  downloads.md:
-    title: הורדות
-    generation: markdown
+# pages:
+#   index.md:
+#     title: אודות הפרויקט
+#     generation: markdown
+#   data-flow.md:
+#     title: DataFlow
+#     generation: markdown
+#   search-interactions.md:
+#     generation: markdown
+#   server-community.md:
+#     generation: markdown
+#   server-hospital.md:
+#     title: Server - בית החולים
+#     generation: markdown
+#   client-hospital.md: 
+#     title: Client - בית החולים
+#     generation: markdown
+#   profiles-and-extensions.md:
+#     title: פרופילים והרחבות
+#     generation: markdown
+#   examples.md:
+#     title: דוגמאות
+#     generation: markdown
+#   downloads.md:
+#     title: הורדות
+#     generation: markdown
 
 
   
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  קישורים נוספים:
-    FHIR Spec: new-tab {{site.data.fhir.path}}index.html
-    Israel LCore : new-tab https://en.fhir-il-community.org/fhir-israel-core
-  הורדות : downloads.html
-  משאבי FHIR: 
-    פרופילים והרחבות : profiles-and-extensions.html
-    דוגמאות: examples.html
-  הנחיות: 
-    חיפושים ואינטראקציות: search-interactions.html
-    server - קהילה: server-community.html
-    server - בית החולים: server-hospital.html
-    client - בית החולים: client-hospital.html
-  Dataflow : data-flow.html
-  בית: index.html
+# menu:
+#   קישורים נוספים:
+#     FHIR Spec: new-tab {{site.data.fhir.path}}index.html
+#     Israel LCore : new-tab https://en.fhir-il-community.org/fhir-israel-core
+#   הורדות : downloads.html
+#   משאבי FHIR: 
+#     פרופילים והרחבות : profiles-and-extensions.html
+#     דוגמאות: examples.html
+#   הנחיות: 
+#     חיפושים ואינטראקציות: search-interactions.html
+#     server - קהילה: server-community.html
+#     server - בית החולים: server-hospital.html
+#     client - בית החולים: client-hospital.html
+#   Dataflow : data-flow.html
+#   בית: index.html
 
 #
 # The parameters property represents IG.definition.parameter. Rather
