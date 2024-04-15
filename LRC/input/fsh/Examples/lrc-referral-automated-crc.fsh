@@ -6,7 +6,7 @@ Usage: #example
 * meta.profile = $lrc-referral
 * identifier.system = "http://fhir.meuhedet.co.il/identifier/referral-id"
 * identifier.value = "733-201"
-* requisition.value = "21e40433-dec3-43d2-8183-c0badc5d2116"
+* requisition.value = "51ecd763-209e-4681-b19e-e3fcc1f1d1e4"
 * status = #active
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure"

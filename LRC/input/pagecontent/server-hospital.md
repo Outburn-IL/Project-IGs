@@ -44,7 +44,7 @@
 
 `PUT [sever url]/Observation?identifier=urn:ietf:rfc:3986|urn:uuid:d10303c5-7b66-4f1b-b6f0-24e5808c60f4`
 
-#### DiagnosticReport Resource
+### ServiceRequest Resource
 
 משאב ההפניה, בנוסף לשמירתו בקהילה, נשמר בשלב מאוחר יותר גם בביה"ח. לכן על ביה"ח לתמוך באינטראקציות הבאות:
 

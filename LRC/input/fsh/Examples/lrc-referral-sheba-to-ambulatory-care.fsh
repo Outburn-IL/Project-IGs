@@ -1,4 +1,4 @@
-Instance: lrec-referral-sheba-to-ambulatory-care
+Instance: lrc-referral-sheba-to-ambulatory-care
 InstanceOf: lrc-referral
 Usage: #example
 * text.status = #generated
