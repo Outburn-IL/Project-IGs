@@ -59,6 +59,7 @@ pages:
     generation: markdown
   server-community.md:
     generation: markdown
+    title: Server - קהילה
   server-hospital.md:
     title: Server - בית החולים
     generation: markdown

@@ -33,7 +33,7 @@ Description: "פאנל תוצאות, עבור מקרים בהם ServiceRequest �
 * code.coding ^slicing.description = "Loinc Lab report"
 * code.coding ^slicing.ordered = false
 * code.coding contains loinc-lab 1..1
-* code.coding[loinc-lab] from $vs-lrc-onco-panel-result-codes (required)
+* code.coding[loinc-lab] from $vs-lrc-panel-result-codes (required)
 * code.coding[loinc-lab] 1..1
   * system 1..1
   * code 1..1

@@ -3,7 +3,7 @@
 ## Search & Interactions
 
 הסעיף הבא מתייחס לדרישות מצד ה- server, לצורך מימוש REST Interactions ומימוש SearchParameters (אפשרויות חיפוש), אשר בלעדיהן לא ניתן לקיים את התהליך במלואו.
-בתחילה מוצגות טבלאות מרכזות, ולאחריהן פירוט המתודות ופרמטרי החיפוש בחלוקה לפי Server רלוונטי (קהילה / בית חולים).
+בסעיף זה מוצגות טבלאות מרכזות, ובסעיפים הבאים מוצג פירוט של המתודות ופרמטרי החיפוש בחלוקה לפי Server רלוונטי (קהילה / בית חולים).
 
 
 ### Methods 
@@ -31,12 +31,16 @@
 
 להלן ריכוז SearchParameters, בהתייחס לשלב הרלוונטי בתהליך, לאיזה גורם מהווה Server באותו השלב והאם זה פרמטר שחובה לתמוך בו.
 
-|**Resource Type**|**Supported Profiles**|**Supported Searches**|**Supported**<br>\_includes|**Server**|
+|**Resource Type**|**Supported Profiles**|**Supported Searches**|**includes\_ Supported**|**Server**|
 | :-: | :-: | :-: | :-: | :-: |
-|[Patient](https://hl7.org/fhir/R4/patient.html)|ILCore Patient Profile|<p>identifier</p><p>\_summary</p>|-|קהילה|
-|[ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)|<p>LRC Lab Test Referral;</p><p>LRC Lab Test Referral Group</p>|identifier|-|בית חולים|
-|[Observation](https://hl7.org/fhir/R4/observation.html)|<p>LRC Test Result;</p><p>LRC Panel Lab Test Result</p>|identifier|-|בית חולים|
-|[DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)|LRC Lab Test Report|identifier|<p>DiagnosticReport:based-on</p><p>DiagnosticReport:result</p>|בית חולים|
+|[Patient](https://hl7.org/fhir/R4/patient.html)|ILCore Patient Profile|identifier|-|קהילה|
+|[Patient](https://hl7.org/fhir/R4/patient.html)|ILCore Patient Profile|summary\_|-|קהילה|
+|[ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)|LRC Lab Test Referral|identifier|-|בית חולים|
+|[ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html)|LRC Lab Test Referral Group|identifier|-|בית חולים|
+|[Observation](https://hl7.org/fhir/R4/observation.html)|LRC Test Result|identifier|-|בית חולים|
+|[Observation](https://hl7.org/fhir/R4/observation.html)|LRC Panel Lab Test Result|identifier|-|בית חולים|
+|[DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)|LRC Lab Test Report|identifier|DiagnosticReport:based-on|בית חולים|
+|[DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)|LRC Lab Test Report|identifier|DiagnosticReport:result|בית חולים|
 
 
 

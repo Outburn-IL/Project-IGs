@@ -1,4 +1,4 @@
-Instance: lrc-referral-group-example
+Instance: lrc-referral-group
 InstanceOf: lrc-referral-group
 Usage: #example
 * meta.profile = $lrc-referral-group
@@ -11,7 +11,7 @@ Usage: #example
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #urgent
-* code = $loinc#11502-2 "Laboratory Report"
+* code.coding[loinc-lab] = $loinc#11502-2 "Laboratory report"
 * subject = Reference(http://hapi-fhir.outburn.co.il/fhir/Patient/90)
 * subject.type = "Patient"
 * subject.identifier.system = "http://fhir.health.gov.il/identifier/il-national-id"

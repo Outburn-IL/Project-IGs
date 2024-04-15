@@ -1,6 +1,6 @@
 <div id="intro" dir="rtl" markdown="1">
 
-## – הנחיות ל- Client
+## הנחיות ל- Client
 
 ### בית החולים
 
@@ -21,7 +21,7 @@
 
 4. אם בביה"ח מעוניינים לשלוף את ה- DiagnosticReport עם כל המידע הכלול בו (הפניות ותוצאות), ניתן לבצע שליפה על פי הפרמטרים הבאים:
    1. **identifier** 
-   2. **\_include**  – צירוף משאבים מקושרים לתוצאת השאילתא.
+   2. **include\_**  – צירוף משאבים מקושרים לתוצאת השאילתא.
     - **DiagnosticReport:based-on**
     - **DiagnosticReport:result**
 

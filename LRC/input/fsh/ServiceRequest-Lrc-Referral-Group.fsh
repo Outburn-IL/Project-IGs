@@ -41,7 +41,7 @@ Description: "הפניה מרכזת. להפניה הזו אין קוד בדיק�
   * system = $loinc (exactly)
   * code 1..1
   * code = #11502-2 (exactly)
-  * display = "Laboratory report" (exactly) //should this be exactly?
+  * display = "Laboratory report" (exactly)
 * subject 1..1
 * subject only Reference(ILCorePatient)
 * requester 1..1
