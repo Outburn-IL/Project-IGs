@@ -10,6 +10,7 @@ Description: "בדיקת קיום התחייבות, עם או בלי בקשה ל
 * purpose 1..1
 * purpose from $vs-t17-eligibilityrequest-purpose (required)
 * patient 1..1
+* patient only Reference(il-core-patient)
 * patient.identifier.system 1..1
 * patient.identifier.value 1..1
 * provider.identifier.system 1..1
@@ -50,3 +51,5 @@ Description: "בדיקת קיום התחייבות, עם או בלי בקשה ל
 * supportingInfo[cov-elig-req-previous].information.identifier 1..1
 * supportingInfo[cov-elig-req-previous].information.identifier.system 1..1
 * supportingInfo[cov-elig-req-previous].information.identifier.value 1..1
+
+// checked 21-4-24 Kippi

@@ -12,7 +12,7 @@ Description: "מסמך ההתחייבות המאושרת, כחלק מפרטי ה
 * type.coding ^slicing.rules = #open
 * type.coding ^slicing.description = ""
 * type.coding ^slicing.ordered = false
-* type.coding contains oblig 1..*
+* type.coding contains oblig 1..1
 * type.coding[oblig].system 1..1
 * type.coding[oblig].system = $loinc (exactly)
 * type.coding[oblig].code 1..1

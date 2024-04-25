@@ -37,9 +37,9 @@ Alias: $ext-doc-event-date =                http://fhir.health.gov.il/StructureD
 Alias: $coverage-type =                     http://fhir.health.gov.il/cs/coverage-type
 Alias: $coverage-class =                    http://fhir.health.gov.il/cs/coverage-class
 Alias: $t17-rej-codes-vs =                  http://fhir.health.gov.il/ValueSet/tofes17-reject-codes 
-Alias: $t17-rej-codes =                     http://fhir.health.gov.il/cs/moh-form17-issue-code
+Alias: $t17-issue-codes =                   http://fhir.health.gov.il/cs/moh-form17-issue-code
 Alias: $t17-err-codes-vs =                  http://fhir.health.gov.il/ValueSet/tofes17-error-codes
-Alias: $ext-issue-regards =                     http://fhir.outburn.co.il/StructureDefinition/issue-regards
+Alias: $ext-issue-regards =                 http://fhir.outburn.co.il/StructureDefinition/issue-regards
 
 
 // for the examples:

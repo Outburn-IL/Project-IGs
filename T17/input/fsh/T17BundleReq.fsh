@@ -30,3 +30,5 @@ Description: "מארז של ישויות הנכללות בבקשה להתחיי�
 * entry[patient].fullUrl 1..1
 * entry[patient].resource 1..1
 * entry[patient].resource only il-core-patient
+
+// checked 21-4-24 Kippi

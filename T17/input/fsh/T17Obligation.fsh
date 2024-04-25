@@ -24,3 +24,5 @@ Description: "פרטי ההתחייבות המאושרת"
 * class.type.coding.system 1..1
 * class.type.coding.system = $coverage-class (exactly)
 * class.type.coding.code 1..1
+
+// checked 21-4-24 Kippi

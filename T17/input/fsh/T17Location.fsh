@@ -9,7 +9,6 @@ Description: "המיקום אליו נקבע התור - כולל פרטי מחל
 * type ^slicing.discriminator.type = #value
 * type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
-* type ^slicing.description = ""
 * type ^slicing.ordered = false
 * type contains moh-type 1..*
 * type[moh-type].coding 1..*
@@ -24,3 +23,4 @@ Description: "המיקום אליו נקבע התור - כולל פרטי מחל
 * managingOrganization.identifier.system 1..1
 * managingOrganization.identifier.value 1..1
  
+// checked 21-4-24 Kippi

@@ -20,9 +20,12 @@ Description: "פרטי התור עבורו נשלחה בקשה להתחייבו�
 * participant[subject].type.coding.code 1..1
 * participant[subject].type.coding.system = $participant-type
 * participant[subject].type.coding.code = #SBJ
+* participant[subject].type.coding.display = "subject"
 * participant[subject].type.coding.display 1..1
 * participant[subject].actor 1..1
 * participant[subject].actor.identifier 1..1
 * participant[subject].actor.identifier.system 1..1
 * participant[subject].actor.identifier.value 1..1
-* participant[subject].status = #accepted
+* participant[subject].status = #accepted (exactly)
+
+// checked 21-4-24 Kippi - question sent to liron

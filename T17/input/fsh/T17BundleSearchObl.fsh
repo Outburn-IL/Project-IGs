@@ -18,8 +18,15 @@ Description: "תשובת הקופה עבור סטאטוס התחייבות שנ�
 * entry[obligation].fullUrl 1..1
 * entry[obligation].resource 1..1
 * entry[obligation].resource only T17Obligation
+* entry[obligation].search 1..1
+* entry[obligation].search.mode 1..1
+* entry[obligation].search.mode = #match (exactly)
 * entry[obligation-doc] obeys bundle-https
 * entry[obligation-doc].fullUrl 1..1
 * entry[obligation-doc].resource 1..1
 * entry[obligation-doc].resource only T17ObligationDoc
+* entry[obligation-doc].search 1..1
+* entry[obligation-doc].search.mode 1..1
+* entry[obligation-doc].search.mode = #include (exactly)
 
+// checked 22-4-24 Kippi

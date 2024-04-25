@@ -2,17 +2,16 @@ Profile: T17BundleSearchPatient
 Parent: Bundle
 Id: t17-bundle-search-pat
 Title: "T17 Bundle Search Obl"
-Description: "מארז מטופלים המוחזרים לביה\"ח עם הפרטים והמזהה הלוגי של הקופה"
+Description: "תשובת הקופה המוחזרת לביה\"ח עם הפרטים והמזהה הלוגי של המטופל בקופה"
 * ^url = $T17-bundle-search-pat
 * type 1..1
 * type = #searchset
-* entry ^slicing.discriminator.type = #profile
-* entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #open
-* entry ^slicing.ordered = false
-* entry contains 
-        patient 1..1
-* entry[patient] obeys bundle-https
-* entry[patient].fullUrl 1..1
-* entry[patient].resource 1..1
-* entry[patient].resource only il-core-patient
+* entry obeys bundle-https
+* entry 0..1
+* entry.fullUrl 1..1
+* entry.resource 1..1
+* entry.resource only il-core-patient
+* entry.search 1..1
+* entry.search.mode 1..1
+* entry.search.mode = #match (exactly)
+// checked 22-4-24 Kippi

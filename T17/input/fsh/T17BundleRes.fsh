@@ -12,16 +12,17 @@ Description: "מארז של ישויות הנכללות במענה להתחיי�
 * entry ^slicing.ordered = false
 * entry contains 
         response 1..1 and 
-        obligation 0..1 and
-        obligation-doc 0..1
+        obligation 0..* and
+        obl-doc 0..*
 * entry[response] obeys bundle-https
+* entry[response].fullUrl 1..1
 * entry[response].resource 1..1
 * entry[response].resource only T17Response
 * entry[obligation] obeys bundle-https
 * entry[obligation].fullUrl 1..1
 * entry[obligation].resource 1..1
 * entry[obligation].resource only T17Obligation
-* entry[obligation-doc].fullUrl 1..1
-* entry[obligation-doc].resource 1..1
-* entry[obligation-doc].resource only T17ObligationDoc
+// * entry[obl-doc].fullUrl 1..1  --- don't we need this? not in the excel
+* entry[obl-doc].resource 1..1
+* entry[obl-doc].resource only T17ObligationDoc
 

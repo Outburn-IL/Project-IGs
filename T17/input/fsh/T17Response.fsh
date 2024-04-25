@@ -4,9 +4,7 @@ Id: t17-response
 Title: "T17 Request"
 Description: "בדיקת קיום התחייבות, עם או בלי בקשה ליצירת התחייבות"
 * ^url = $T17-response
-* identifier 1..*
-* identifier.system 1..1
-* identifier.value 1..1
+* . obeys purpose-validation
 * purpose 1..1
 * purpose from $vs-t17-eligibilityresponse-purpose (required)
 * patient 1..1
@@ -25,28 +23,30 @@ Description: "בדיקת קיום התחייבות, עם או בלי בקשה ל
 * insurance.item.productOrService.coding ^slicing.discriminator.type = #value
 * insurance.item.productOrService.coding ^slicing.discriminator.path = "system"
 * insurance.item.productOrService.coding ^slicing.rules = #open
-* insurance.item.productOrService.coding ^slicing.description = ""
+* insurance.item.productOrService.coding ^slicing.description = "סלייסינג לקוד משרד הבריאות"
 * insurance.item.productOrService.coding ^slicing.ordered = false
 * insurance.item.productOrService.coding contains moh 1..1
-* insurance.item.productOrService.coding[moh] from $t17-rej-codes-vs (required)
+* insurance.item.productOrService.coding[moh] from $moh-med-serv (required)
 * insurance.item.productOrService.coding[moh].system 1..1
+* insurance.item.productOrService.coding[moh].system = $medical-service-moh (exactly)
 * insurance.item.productOrService.coding[moh].code 1..1
 * insurance.item.excluded 1..1
 * insurance.item.modifier from $t17-rej-codes-vs (extensible)
 * insurance.item.modifier.coding ^slicing.discriminator.type = #value
 * insurance.item.modifier.coding ^slicing.discriminator.path = "system"
 * insurance.item.modifier.coding ^slicing.rules = #open
-* insurance.item.modifier.coding ^slicing.description = ""
+* insurance.item.modifier.coding ^slicing.description = "סלייסינג לקוד משרד הבריאות"
 * insurance.item.modifier.coding ^slicing.ordered = false
 * insurance.item.modifier.coding contains moh 0..1
 * insurance.item.modifier.coding[moh] from $t17-rej-codes-vs (required)
 * insurance.item.modifier.coding[moh].system 1..1
-* insurance.item.modifier.coding[moh].system = $t17-rej-codes (exactly)
+* insurance.item.modifier.coding[moh].system = $t17-issue-codes (exactly)
 * insurance.item.modifier.coding[moh].code 1..1
-* error.extension contains $ext-issue-regards named issue-regards 0..*
-// * error.extension[issue-regards] 0..*
+* error.extension contains $ext-issue-regards named issue-regards 0..1
 * error.extension[issue-regards].url 1..1
 * error.extension[issue-regards].valueCoding 1..1
 * error.extension[issue-regards].valueCoding.system 1..1
 * error.extension[issue-regards].valueCoding.code 1..1
 * error.code from $t17-err-codes-vs (extensible)
+
+// checked 21-4-24 Kippi - question sent to liron

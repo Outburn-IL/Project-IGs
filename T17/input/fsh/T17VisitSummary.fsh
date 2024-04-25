@@ -23,3 +23,5 @@ Description: "מסמך המלצת המטפל בביה\"ח להמשך טיפול,
 * context.related.type 1..1
 * context.related.type = #Coverage
 * context.related.reference 1..1
+
+// checked 21-4-24 Kippi
