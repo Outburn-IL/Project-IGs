@@ -73,6 +73,15 @@ pages:
   downloads.md:
     title: הורדות
     generation: markdown
+  resources-in-the-process.md:
+    title: משאבים בתהליך
+    generation: markdown
+  decision-tree-request.md:
+    title: Request עץ החלטות
+    generation: markdown
+  decision-tree-response.md:
+    title: Response עץ החלטות
+    generation: markdown
 
 
   
@@ -93,6 +102,9 @@ menu:
   פרויקט:
     מבט-על: project-overview.html
     Dataflow : data-flow.html
+    משאבים בתהליך: resources-in-the-process.html
+    Request עץ החלטות: decision-tree-request.html
+    Response עץ החלטות: decision-tree-response.html
   בית: index.html
 
 #
